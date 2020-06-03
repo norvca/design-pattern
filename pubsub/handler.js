@@ -1,7 +1,7 @@
-import { addPerson, deletePerson } from './people.js';
+import { addPerson, deletePerson } from './database.js';
 
-const form = document.querySelector('form');
+const addBtn = document.querySelector('button');
 const ul = document.querySelector('ul');
 
-form.addEventListener('submit', addPerson);
+addBtn.addEventListener('click', addPerson);
 ul.addEventListener('click', deletePerson);
