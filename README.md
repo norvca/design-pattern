@@ -1,3 +1,7 @@
 # design-pattern
 
-### [pubsub](./pubsub)
+## Behavioral design patterns
+
+### [Observer pattern](./observer)
+
+### [Pub/sub pattern](./pubsub)
