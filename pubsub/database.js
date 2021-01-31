@@ -1,13 +1,12 @@
-import pubsub from './pubsub.js';
-
 const people = [];
 
 function addPerson(e) {
   e.preventDefault();
-  const input = document.querySelector('input').value;
-  people.push(input);
+  let input = document.querySelector('input');
+  people.push(input.value);
+  input.value = '';
 
-  pubsub.emit('peopleChanged', people);
+  return people;
 }
 
 function deletePerson(e) {
@@ -17,7 +16,7 @@ function deletePerson(e) {
   const index = ulArr.indexOf(li);
   people.splice(index, 1);
 
-  pubsub.emit('peopleChanged', people);
+  return people;
 }
 
 export { addPerson, deletePerson };
