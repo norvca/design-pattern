@@ -1,10 +1,10 @@
 # Factory Pattern
 
-### Class diagram
-![factory](../../pics/factory.png)
+### Structure
+![Factory](../../pics/factory.png)
 
-### Use case
+### Structure code
+[Factory pattern](./factory.ts)
+
+### Examples
 [Jquery selector](./examples/query.js), [React.createElement](.,/../examples/createElement.js)
-
-
-

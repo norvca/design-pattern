@@ -1,9 +1,12 @@
 # Singleton Pattern
 
-### Class diagram
+### Structure
 ![Singleton](../../pics/singleton.png)
 
-### Use case
+### Structure code
+[Singleton pattern](./singleton.ts)
+
+### Examples
 [Login form](./examples/loginForm.html), `Store` in `vuex` and `redux`
 
 
