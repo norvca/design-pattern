@@ -1,9 +1,9 @@
 # Singleton Pattern
 
 ### Class diagram
-![factory](../../pics/factory.png)
+![Singleton](../../pics/singleton.png)
 
 ### Use case
-[Jquery selector](./use-case/query.js), [React.createElement](.,/../use-case/createElement.js)
+[Login form](./examples/loginForm.html), `Store` in `vuex` and `redux`
 
 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Singleton login form</title>
+</head>
+<style>
+  #modal {
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
+<body>
+  <button id='open'>Open</button>
+  <button id='close'>Close</button>
+</body>
+<script>
+
+  class LoginForm {
+    static instance;
+
+    constructor() {
+      this.state = 'hide';
+      this.element = document.createElement('div');
+      this.element.innerHTML = 'I am the single form!';
+      this.element.id = 'modal';
+    }
+
+    static getInstance() {
+      if (!LoginForm.instance) {
+        LoginForm.instance = new LoginForm()
+        document.body.appendChild(LoginForm.instance.element);
+      }
+      return LoginForm.instance;
+    }
+
+    show() {
+      if (this.state === 'show') {
+        console.error('Login form already showed!');
+        return;
+      }
+
+      this.state = 'show';
+      this.element.style.display = 'flex';
+      console.log('Showing login form');
+    }
+
+    hide() {
+      if (this.state === 'hide') {
+        console.error('Login form already hided!');
+        return;
+      }
+
+      this.state = 'hide';
+      this.element.style.display = 'none';
+      console.log('Hiding login form');
+    }
+  }
+
+
+  document.getElementById('open').addEventListener('click', function () {
+    const loginForm = LoginForm.getInstance()
+    loginForm.show();
+  })
+
+  document.getElementById('close').addEventListener('click', function () {
+    const loginForm = LoginForm.getInstance()
+    loginForm.hide();
+  })
+
+</script>
+
+</html>

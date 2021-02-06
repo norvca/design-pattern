@@ -11,3 +11,7 @@ class JQuery {
 window.$ = function (selector) {
   return new JQuery(selector);
 };
+
+// Use
+$('li');
+$('div').append(node);
