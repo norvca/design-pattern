@@ -2,6 +2,6 @@
 
 ## Behavioral design patterns
 
-### [Observer pattern](./observer)
+### [Observer pattern](./behavioral-design-patterns/observer)
 
-### [Pub/sub pattern](./pubsub)
+### [Pub/sub pattern](./behavioral-design-patterns/pubsub)
