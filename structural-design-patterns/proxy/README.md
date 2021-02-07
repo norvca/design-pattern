@@ -49,6 +49,8 @@ client(realService);
 [Event delegation](https://javascript.info/event-delegation), ES6 Proxy(To be learned)
 
 ## Relations
-Adapter: provides a new interface to the wrapped object
-Proxy: Provides the same interface with full access/function to the wrapped object
-Decorator: provides an enhanced interface to the wrapped object
+**Adapter**: provides a new interface to the wrapped object
+
+**Proxy**: Provides the same interface with full access/function to the wrapped object
+
+**Decorator**: provides an enhanced interface to the wrapped object
