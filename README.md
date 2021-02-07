@@ -5,7 +5,8 @@
 ### [Factory pattern](./creational-design-patterns/factory)
 
 ## Structural design patterns
-### [Adapter pattern](./structural-design-patterns/adapter/)
+### [Adapter pattern](./structural-design-patterns/adapter)
+### [Proxy pattern](./structural-design-patterns/proxy)
 
 ## Behavioral design patterns
 ### [Observer pattern](./behavioral-design-patterns/observer)

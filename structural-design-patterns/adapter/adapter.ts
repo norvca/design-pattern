@@ -8,12 +8,17 @@ class Adaptee {
 
 class Adapter implements Target {
   constructor(private adaptee: Adaptee) {}
-  method() {}
+
+  method() {
+    this.adaptee.oldMethod();
+  }
 }
 
+// Client code
 // Client code supports classes that follow the Target interface
 function client(target: Target) {
-  console.log(target.method());
+  target.method();
+  // ...
 }
 
 // Client can't work with adaptee
